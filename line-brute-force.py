@@ -1,4 +1,11 @@
 import numpy as np
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+plt.suptitle('Membentuk Garis Dengan Algoritma Brute Force')
+plt.subplots_adjust(bottom=0.2)
+x = np.array([3,9])
+y = np.array([1,5])
 
 m=0
 x = np.array([3,9])
@@ -50,3 +57,12 @@ for i in range (len(xline)):
     else:
         print('(',xline[i],',',yline[i],end=')')
 print()
+
+l0, = ax.plot(xline, yline ,'o') #Menampilkan titik penghubng
+l1, = ax.plot(x, y) #Menampilkan garis penghubung
+
+l0.set_label('Titik Penghubung') #Menampilkan keterangan
+l1.set_label('Garis Penghubung')
+ax.legend()
+plt.grid()
+plt.show()
