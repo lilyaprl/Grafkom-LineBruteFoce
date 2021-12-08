@@ -40,8 +40,8 @@ else:
                 xline.append(round(x2))
                 y2+=1
                 i+=1
-    np.array(xline)
-    np.array(yline)
+np.array(xline)
+np.array(yline)
 print('Titik Koordinat: (', x[0], ',',y[0],') (',x[1],',',y[1],')')
 print('Titik Penghubung: ',end=' ')
 for i in range (len(xline)):
