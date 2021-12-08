@@ -58,10 +58,10 @@ for i in range (len(xline)):
         print('(',xline[i],',',yline[i],end=')')
 print()
 
-l0, = ax.plot(xline, yline ,'o') #Menampilkan titik penghubng
-l1, = ax.plot(x, y) #Menampilkan garis penghubung
+l0, = ax.plot(xline, yline ,'o')
+l1, = ax.plot(x, y)
 
-l0.set_label('Titik Penghubung') #Menampilkan keterangan
+l0.set_label('Titik Penghubung')
 l1.set_label('Garis Penghubung')
 ax.legend()
 plt.grid()
